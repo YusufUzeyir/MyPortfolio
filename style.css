@@ -251,7 +251,7 @@ section { position: relative; }
 }
 .about-photo-wrap {
   position: relative;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: center; justify-content: flex-start;
 }
 .about-photo {
   width: 100%; max-width: 400px;
@@ -583,6 +583,7 @@ footer {
 @media (max-width: 1024px) {
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-photo-wrap { justify-content: center; }
   .section-pad { padding: 80px 24px; }
 }
 @media (max-width: 768px) {

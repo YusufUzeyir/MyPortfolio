@@ -221,10 +221,72 @@ function initAnimations() {
   });
 
   // ===== ABOUT =====
-  gsap.from('.about-photo', {
+  gsap.from('.about-photo-wrap', {
     x: -60, opacity: 0, duration: 1, ease: 'power3.out',
     scrollTrigger: { trigger: '#about', start: 'top 70%' }
   });
+
+  const aboutImg = document.querySelector('.about-photo');
+  if (aboutImg) {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    canvas.className = 'about-photo'; 
+    
+    const offCanvas = document.createElement('canvas');
+    const offCtx = offCanvas.getContext('2d', { willReadFrequently: true });
+    
+    const pixelObj = { size: 50 };
+    let isAnimDone = false;
+
+    const drawPixelated = () => {
+      const w = canvas.width;
+      const h = canvas.height;
+      ctx.clearRect(0, 0, w, h);
+      ctx.imageSmoothingEnabled = false;
+      
+      if (pixelObj.size <= 1) {
+        ctx.drawImage(aboutImg, 0, 0, w, h);
+      } else {
+        const scaledW = Math.max(1, w / pixelObj.size);
+        const scaledH = Math.max(1, h / pixelObj.size);
+        
+        offCanvas.width = scaledW;
+        offCanvas.height = scaledH;
+        offCtx.clearRect(0, 0, scaledW, scaledH);
+        offCtx.drawImage(aboutImg, 0, 0, scaledW, scaledH);
+        
+        ctx.drawImage(offCanvas, 0, 0, scaledW, scaledH, 0, 0, w, h);
+      }
+    };
+
+    const startAnim = () => {
+      if(isAnimDone) return;
+      canvas.width = aboutImg.naturalWidth || 400;
+      canvas.height = aboutImg.naturalHeight || 400;
+      aboutImg.parentNode.insertBefore(canvas, aboutImg);
+      aboutImg.style.display = 'none';
+      drawPixelated();
+      
+      gsap.to(pixelObj, {
+        size: 1,
+        duration: 2.5,
+        ease: 'power1.inOut',
+        onUpdate: drawPixelated,
+        onComplete: () => {
+          isAnimDone = true;
+          aboutImg.style.display = '';
+          canvas.remove();
+        },
+        scrollTrigger: { trigger: '#about', start: 'top 70%' }
+      });
+    };
+
+    if (aboutImg.complete && aboutImg.naturalWidth > 0) {
+      startAnim();
+    } else {
+      aboutImg.addEventListener('load', startAnim);
+    }
+  }
   gsap.from('.about-text > *', {
     y: 40, opacity: 0, stagger: 0.12, duration: 0.8, ease: 'power3.out',
     scrollTrigger: { trigger: '.about-text', start: 'top 75%' }
