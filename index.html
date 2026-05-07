@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusuf Üzeyir Kaya — Software Engineer & Data Scientist</title>
+  <meta name="description"
+    content="Portfolio of Yusuf Üzeyir Kaya — Software Engineer & Data Scientist. AI, Machine Learning, Augmented Reality, and Cloud-Based Solutions.">
+  <meta property="og:title" content="Yusuf Üzeyir Kaya — Portfolio">
+  <meta property="og:description" content="Software Engineer & Data Scientist based in İstanbul">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <span class="loader-text">Yusuf Üzeyir Kaya</span>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">YÜK</a>
+    <div class="nav-links">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#journey" data-i18n="nav.journey">Journey</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <button id="lang-switch">TR</button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <!-- canvas-art.js inserts hero canvas here -->
+    <div class="hero-content">
+      <img src="media/animoji pp.png" alt="Animoji" class="hero-animoji" loading="lazy">
+      <h1 class="hero-title" id="hero-title">Yusuf Üzeyir Kaya</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Software Engineer &amp; Data Scientist</p>
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span data-i18n="hero.badge">Based in İstanbul</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-pad">
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <img src="media/arkadan ben.png" alt="Yusuf Üzeyir Kaya" class="about-photo" loading="lazy">
+        </div>
+        <div class="about-text">
+          <span class="section-label" data-i18n="about.label">About Me</span>
+          <h2 class="section-title" data-i18n="about.title">Bridging Data &amp; Code</h2>
+          <p data-i18n="about.p1">I'm a Computer Engineering student at Kocaeli University, passionate about building
+            intelligent systems that make a real-world impact. From classifying brain tumors with transformer models to
+            detecting ECG anomalies in real-time — I love turning raw data into meaningful insights.</p>
+          <p data-i18n="about.p2">Beyond data science, I explore augmented reality, cloud computing, and full-stack web
+            development. I believe the most impactful solutions emerge at the intersection of multiple disciplines.</p>
+          <div class="about-note">
+            <img src="media/note paper.png" alt="Note" loading="lazy">
+            <span class="about-note-text" data-i18n="about.note">"Stay curious, build relentlessly, ship
+              fearlessly."</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-pad">
+      <span class="section-label" data-i18n="skills.label">Toolkit</span>
+      <h2 class="section-title" data-i18n="skills.title">What I Work With</h2>
+      <div class="bento-grid">
+        <!-- Row 1 -->
+        <div class="bento-card span-2">
+          <div>
+            <div class="card-icon-row">
+              <i class="devicon-python-plain colored"></i>
+              <i class="devicon-pandas-plain colored"></i>
+              <i class="devicon-numpy-plain colored"></i>
+              <i class="devicon-csharp-plain colored"></i>
+              <i class="devicon-dotnetcore-plain colored"></i>
+            </div>
+            <div class="card-title" data-i18n="skills.cat1">Programming Languages</div>
+            <div class="card-desc" data-i18n="skills.desc1">Python (Pandas, NumPy, Scikit-learn, PyTorch) · C# (.NET
+              Framework, LINQ, Entity Framework Core) · SQL</div>
+          </div>
+        </div>
+        <div class="bento-card">
+          <div>
+            <div class="card-icon-row">
+              <i class="devicon-mysql-plain colored"></i>
+              <i class="devicon-postgresql-plain colored"></i>
+              <i class="devicon-microsoftsqlserver-plain colored"></i>
+              <i class="devicon-firebase-plain colored"></i>
+              <i class="devicon-supabase-plain colored"></i>
+            </div>
+            <div class="card-title" data-i18n="skills.cat2">Databases</div>
+            <div class="card-desc" data-i18n="skills.desc2">MySQL · PostgreSQL · Microsoft SQL Server · Firebase ·
+              Supabase</div>
+          </div>
+        </div>
+        <div class="bento-card">
+          <div>
+            <div class="card-icon-row">
+              <i class="devicon-pytorch-original colored"></i>
+              <i class="devicon-scikitlearn-plain colored"></i>
+              <i class="devicon-tensorflow-original colored"></i>
+            </div>
+            <div class="card-title" data-i18n="skills.cat3">Data Science & ML</div>
+            <div class="card-desc" data-i18n="skills.desc3">Machine Learning · Deep Learning · Data Analysis · Model
+              Evaluation · Feature Engineering</div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="bento-card">
+          <div>
+            <div class="card-icon-row">
+              <i class="devicon-docker-plain colored"></i>
+              <i class="devicon-git-plain colored"></i>
+              <i class="devicon-github-original"></i>
+              <i class="devicon-apachekafka-original colored"></i>
+              <img src="https://cdn.simpleicons.org/rabbitmq/FF6600" alt="RabbitMQ" onerror="this.style.display='none'">
+              <i class="devicon-postman-plain colored"></i>
+            </div>
+            <div class="card-title" data-i18n="skills.cat4">Tools & DevOps</div>
+            <div class="card-desc" data-i18n="skills.desc4">Docker · Git · GitHub · RabbitMQ · Apache Kafka · Spark
+              Streaming · Postman</div>
+          </div>
+        </div>
+        <div class="bento-card span-2">
+          <div>
+            <div class="card-icon-row">
+              <img src="https://cdn.simpleicons.org/cursor/000000" alt="Cursor" onerror="this.style.display='none'">
+              <i class="devicon-androidstudio-plain colored"></i>
+              <i class="devicon-intellij-plain colored"></i>
+              <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab"
+                onerror="this.style.display='none'">
+              <i class="devicon-jupyter-plain colored"></i>
+            </div>
+            <div class="card-title" data-i18n="skills.cat5">IDEs & Environments</div>
+            <div class="card-desc" data-i18n="skills.desc5">Cursor IDE · Antigravity · Android Studio · IntelliJ IDEA ·
+              Google Colab · Jupyter Notebook</div>
+          </div>
+        </div>
+        <div class="bento-card">
+          <div>
+            <div class="card-icon-row">
+              <img src="https://cdn.simpleicons.org/anthropic/D97757" alt="Claude" onerror="this.style.display='none'">
+              <img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/openai.svg" alt="ChatGPT" onerror="this.style.display='none'">
+              <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Gemini"
+                onerror="this.style.display='none'">
+              <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" onerror="this.style.display='none'">
+              <i class="devicon-googlecloud-plain colored"></i>
+            </div>
+            <div class="card-title" data-i18n="skills.cat6">Other</div>
+            <div class="card-desc" data-i18n="skills.desc6">Claude · MCP · Agentic Coding · n8n Automation · Gemini CLI
+              · Google Cloud</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-pad">
+      <span class="section-label" data-i18n="projects.label">Selected Work</span>
+      <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+      <div class="projects-wrapper">
+        <div class="projects-track">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="proj-num">01</div>
+            <h3 class="proj-title">Brain Tumor Classification</h3>
+            <p class="proj-desc" data-i18n="proj.1.desc">A deep learning application classifying brain MRI images into
+              different tumor types using the BEiT Transformer model. Achieves high accuracy on multi-class
+              classification.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">BEiT</span>
+              <span class="proj-tag">Deep Learning</span>
+              <span class="proj-tag">Medical AI</span>
+            </div>
+            <a href="https://github.com/YusufUzeyir/BrainTumorClassification-BEITTransformerModel" target="_blank"
+              class="proj-link">View on GitHub →</a>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="proj-num">02</div>
+            <h3 class="proj-title">ECG Anomaly Detection</h3>
+            <p class="proj-desc" data-i18n="proj.2.desc">Real-time anomaly detection on ECG datasets using Apache Kafka
+              for streaming and Apache Spark for processing. Identifies irregular heartbeat patterns instantly.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Kafka</span>
+              <span class="proj-tag">Spark</span>
+              <span class="proj-tag">Big Data</span>
+              <span class="proj-tag">Healthcare</span>
+            </div>
+            <a href="https://github.com/YusufUzeyir/ecg-dataset-anomaly-detected" target="_blank" class="proj-link">View
+              on GitHub →</a>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="proj-num">03</div>
+            <h3 class="proj-title">SOL.AR — Augmented Reality</h3>
+            <p class="proj-desc" data-i18n="proj.3.desc">A mobile AR application built with Unity engine, bringing solar
+              system exploration into augmented reality. Interactive 3D planetary models with educational content.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Unity</span>
+              <span class="proj-tag">C#</span>
+              <span class="proj-tag">AR</span>
+              <span class="proj-tag">Android</span>
+            </div>
+            <a href="https://github.com/YusufUzeyir/SOL.AR-Augmented-Reality-Android-App" target="_blank"
+              class="proj-link">View on GitHub →</a>
+          </div>
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="proj-num">04</div>
+            <h3 class="proj-title">LostPets — Find with AI</h3>
+            <p class="proj-desc" data-i18n="proj.4.desc">An AI-powered platform helping reunite lost pets with their
+              owners. Uses image recognition and matching algorithms to identify animals from photos.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">JavaScript</span>
+              <span class="proj-tag">AI</span>
+              <span class="proj-tag">Computer Vision</span>
+            </div>
+            <a href="https://github.com/YusufUzeyir/LostPets-Find-with-AI" target="_blank" class="proj-link">View on
+              GitHub →</a>
+          </div>
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="proj-num">05</div>
+            <h3 class="proj-title">Sudoku Solver — Computer Vision</h3>
+            <p class="proj-desc" data-i18n="proj.5.desc">Captures a Sudoku puzzle via camera, recognizes digits using
+              computer vision, solves it algorithmically, and overlays the solution in real-time.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">OpenCV</span>
+              <span class="proj-tag">OCR</span>
+            </div>
+            <a href="https://github.com/YusufUzeyir/SudokuSolver-ComputerVision" target="_blank" class="proj-link">View
+              on GitHub →</a>
+          </div>
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="proj-num">06</div>
+            <h3 class="proj-title">CloudBased File Converter</h3>
+            <p class="proj-desc" data-i18n="proj.6.desc">A cloud-based web application for converting files between
+              different formats. Serverless architecture ensures scalability and fast processing.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">Cloud</span>
+              <span class="proj-tag">Serverless</span>
+            </div>
+            <a href="https://github.com/YusufUzeyir/CloudBased-FileConverter" target="_blank" class="proj-link">View on
+              GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY ===== -->
+  <section id="journey">
+    <div class="section-pad">
+      <span class="section-label" data-i18n="journey.label">Journey</span>
+      <h2 class="section-title" data-i18n="journey.title">My Path So Far</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="tl-year" data-i18n="journey.y1">Feb 2025 - Jun 2025</span>
+          <h3 class="tl-title" data-i18n="journey.t1">Matriks Financial Technologies — Software Dev Intern</h3>
+          <p class="tl-desc" data-i18n="journey.d1">Designed and developed automated trading bots on the Matriks Data
+            Terminal using C#. Ensured control and automation of indicator operations with C#. Implemented algorithm
+            design and utilization.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="tl-year" data-i18n="journey.y2">Aug 2024 - Sep 2024</span>
+          <h3 class="tl-title" data-i18n="journey.t2">Kocaeli Univ. Embedded Systems Lab — Software Intern</h3>
+          <p class="tl-desc" data-i18n="journey.d2">Assisted in embedded software development and laboratory research
+            projects.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="tl-year" data-i18n="journey.y3">Jun 2024 - Jul 2024</span>
+          <h3 class="tl-title" data-i18n="journey.t3">Aksoy Çözüm — Software & Process Dev. Intern</h3>
+          <p class="tl-desc" data-i18n="journey.d3">Worked on the digitalization of corporate business processes.
+            Designed complex workflows on the eBA platform and optimized background processes with MsSQL database
+            integrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-pad">
+      <div class="contact-grid">
+        <div>
+          <span class="section-label" data-i18n="contact.label">Get in Touch</span>
+          <h2 class="section-title" data-i18n="contact.title">Let's Build Something Together</h2>
+          <p style="opacity:0.7;line-height:1.8;margin-bottom:24px;" data-i18n="contact.desc">I'm always excited about
+            new opportunities, collaborations, and interesting projects. Feel free to reach out.</p>
+
+          <form class="contact-form" action="mailto:ys.kaya1400@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Name" placeholder="Your Name" required data-i18n-placeholder="contact.name">
+            <input type="email" name="Email" placeholder="Your Email" required data-i18n-placeholder="contact.email">
+            <textarea name="Message" rows="4" placeholder="Your Message" required
+              data-i18n-placeholder="contact.message"></textarea>
+            <button type="submit" class="contact-submit" data-i18n="contact.send">Send Message</button>
+          </form>
+
+          <div class="contact-links">
+            <a href="https://github.com/YusufUzeyir" target="_blank" class="contact-link">🐙 GitHub</a>
+            <a href="https://www.linkedin.com/in/yusuf%C3%BCzeyirkaya/" target="_blank" class="contact-link">💼
+              LinkedIn</a>
+            <a href="https://www.kaggle.com/datasets" target="_blank" class="contact-link">📊 Kaggle</a>
+          </div>
+        </div>
+        <div class="contact-art" id="art-helix"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Yusuf Üzeyir Kaya — <span data-i18n="footer.text">Crafted with code & curiosity</span></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+
+  <script src="canvas-art.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
