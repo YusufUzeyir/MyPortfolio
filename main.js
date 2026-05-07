@@ -10,7 +10,7 @@ const translations = {
   en: {
     "nav.about": "About", "nav.skills": "Skills", "nav.projects": "Projects",
     "nav.journey": "Journey", "nav.contact": "Contact",
-    "hero.subtitle": "Software Engineer & Data Scientist",
+    "hero.subtitle": "Information System Engineer & Data Scientist",
     "hero.badge": "Based in İstanbul", "hero.scroll": "Scroll",
     "about.label": "About Me", "about.title": "Bridging Data & Code",
     "about.p1": "I am a graduate of Kocaeli University, Information Systems Engineering. I am an engineer who continuously learns in the fields of data science, automation, and artificial intelligence, exploring modern technologies to produce effective and scalable solutions.",
@@ -48,7 +48,7 @@ const translations = {
   tr: {
     "nav.about": "Hakkımda", "nav.skills": "Yetenekler", "nav.projects": "Projeler",
     "nav.journey": "Yolculuk", "nav.contact": "İletişim",
-    "hero.subtitle": "Yazılım Mühendisi & Veri Bilimci",
+    "hero.subtitle": "Bilişim Sistemleri Mühendisi & Veri Bilimci",
     "hero.badge": "İstanbul'da yaşıyor", "hero.scroll": "Kaydır",
     "about.label": "Hakkımda", "about.title": "Veri & Kod Arasında Köprü",
     "about.p1": "Kocaeli Üniversitesi Bilişim Sistemleri Mühendisliği mezunuyum. Veri bilimi, otomasyon ve yapay zeka alanlarında sürekli öğrenen; modern teknolojileri keşfederek etkili ve ölçeklenebilir çözümler üreten bir mühendisim.",
