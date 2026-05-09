@@ -580,6 +580,20 @@ footer {
   letter-spacing: 0.06em;
   border-top: 1px solid rgba(14,14,19,0.06);
 }
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.footer-socials a {
+  transition: color 0.3s;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.footer-socials a:hover {
+  color: var(--accent);
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
